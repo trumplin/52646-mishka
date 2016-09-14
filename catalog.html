@@ -9,14 +9,14 @@
 <body>
   <header>
     <div class="top-menu">
-      <div class="top-menu__header-logo"><img src="http://placehold.it/150x100"></div>
-      <div class="top-menu__menu-button"><img src="http://placehold.it/50x50"></div>
+      <a class="top-menu__header-logo" href="">Логотип</a>
+      <a class="top-menu__menu-button" href="">Меню</a>
       <nav class="top-menu__menu-items">
         <ul>
           <li class="top-menu__menu-item"><a href="">Каталог товаров</a></li>
           <li class="top-menu__menu-item"><a href="">Вязание на заказ</a></li>
-          <li class="top-menu__menu-item"><a href="">Поиск по сайту</a></li>
-          <li class="top-menu__menu-item"><a href="">Корзина: пока пуста</a></li>
+          <li class="top-menu__menu-item top-menu__menu-item--search"><a href="">Поиск по сайту</a></li>
+          <li class="top-menu__menu-item top-menu__menu-item--basket"><a href="">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </div>
@@ -54,24 +54,39 @@
     </sections>
 
     <article class="promo-video">
+      <div class="promo-video__icon"></div>
       <h3 href="" class="promo-video__header">Процесс производства</h3>
-      <img src="http://placehold.it/500x200" class="promo-video__image-placeholder">
-      <a href="" class="promo-video__play-button">Произвести видео</a>
+      <div class="promo-video__image-placeholder">
+        <a href="" class="promo-video__play-button">Произвести видео</a>
+      </div>
       <p class="promo-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="button">Сделать заказ</button>
+      <a class="button">Сделать заказ</a>
     </article>
   </main>
 
   <footer>
     <div class="social-links">
-      <a href=""><img src="http://placehold.it/50x50" alt="" class="social-links__link-image social-links__link-image--instagram">Инстаграмм</a>
-      <a href=""><img src="http://placehold.it/50x50" alt="" class="social-links__link-image social-links__link-image--fb">Фейсбук</a>
-      <a href=""><img src="http://placehold.it/50x50" alt="" class="social-links__link-image social-links__link-image--twitter">Твитер</a>
+      <a class="social-links__link-image social-links__link-image--instagram" href="">Инстаграмм</a>
+      <a class="social-links__link-image social-links__link-image--fb" href="">Фейсбук</a>
+      <a class="social-links__link-image social-links__link-image--twitter" href="">Твиттер</a>
     </div>
     <div class="site-developer">
       <a href="" class="site-developer__link">Разработано <img src="http://placehold.it/50x50" alt="" class="site-developer__logo"></a>
     </div>
   </footer>
+  <article class="basket-popup">
+    <h2 class="basket-popup__header">Добавить в корзину</h2>
+    <span class="basket-popup__description">Выбирете размер:</span>
+    <form class="basket-popup__form" action="">
+      <label class="basket-popup__size-button" for="s">S</label>
+      <input class="basket-popup__size-button" type="radio" name="size" id="s" value="s">
+      <label class="basket-popup__size-button" for="m">M</label>
+      <input class="basket-popup__size-button" type="radio" name="size" id="m" value="m">
+      <label class="basket-popup__size-button" for="l">L</label>
+      <input class="basket-popup__size-button" type="radio" name="size" id="l" value="l">
+      <input class="basket-popup__sumbit-button" type="submit" value="Добавить">
+    </form>
+  </article>
 </body>
 
 </html>

@@ -7,19 +7,17 @@
 </head>
 
 <body>
-  <header>
-    <div class="top-menu">
-      <a class="top-menu__header-logo" href="">Логотип</a>
-      <a class="top-menu__menu-button" href="">Меню</a>
-      <nav class="top-menu__menu-items">
-        <ul>
-          <li class="top-menu__menu-item"><a href="">Каталог товаров</a></li>
-          <li class="top-menu__menu-item"><a href="">Вязание на заказ</a></li>
-          <li class="top-menu__menu-item top-menu__menu-item--search"><a href="">Поиск по сайту</a></li>
-          <li class="top-menu__menu-item top-menu__menu-item--basket"><a href="">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="top-menu">
+    <a class="top-menu__header-logo" href="">Логотип</a>
+    <a class="top-menu__menu-button" href="">Меню</a>
+    <nav class="top-menu__menu-items">
+      <ul>
+        <li class="top-menu__menu-item"><a href="">Каталог товаров</a></li>
+        <li class="top-menu__menu-item"><a href="">Вязание на заказ</a></li>
+        <li class="top-menu__menu-item top-menu__menu-item--search"><a href="">Поиск по сайту</a></li>
+        <li class="top-menu__menu-item top-menu__menu-item--basket"><a href="">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -33,7 +31,7 @@
       <fieldset class="order-form__fieldset">
         <legend>Тип</legend>
         <input type="radio" name="type-order" id="accessory" value="accessory">
-        <label class="radio radio--checked" for="accessory">Аксессуар для интерьера</label>
+        <label class="radio" for="accessory">Аксессуар для интерьера</label>
         <input type="radio" name="type-order" id="toys" value="toys">
         <label class="radio" for="toys">Детская игрушка</label>
       </fieldset>
@@ -41,9 +39,9 @@
       <fieldset class="order-form__fieldset">
         <legend>Цвет</legend>
         <input type="checkbox" name="color-order" id="white" value="white">
-        <label class="checkbox checkbox--checked" for="white">Белый</label>
+        <label class="checkbox" for="white">Белый</label>
         <input type="checkbox" name="color-order" id="tiffany" value="tiffany">
-        <label class="checkbox checkbox--checked" for="grey">Серый</label>
+        <label class="checkbox" for="grey">Серый</label>
         <input type="checkbox" name="color-order" id="grey" value="grey">
         <label class="checkbox" for="black">Тифанни</label>
         <input type="checkbox" name="color-order" id="black" value="black">
@@ -56,23 +54,23 @@
 
       <fieldset class="order-form__fieldset">
         <legend>ФИО</legend>
-        <label class="input" for="orders-name">Имя:</label>
-        <input type="input" name="orders-name" id="orders-name" placeholder="Введите ваше имя">
-        <label class="input" for="orders-family">Фамилия:</label>
-        <input type="input" name="orders-family" id="orders-family" placeholder="Укажите фамилию">
-        <label class="input" for="orders-patronymic">Отчество:</label>
-        <input type="input" name="orders-patronymic" id="orders-patronymic" placeholder="Отчество, если желаете">
+        <label class="text" for="orders-name">Имя:</label>
+        <input class="text-edit" type="text" name="orders-name" id="orders-name" placeholder="Введите ваше имя">
+        <label class="text" for="orders-family">Фамилия:</label>
+        <input class="text-edit" type="text" name="orders-family" id="orders-family" placeholder="Укажите фамилию">
+        <label class="text" for="orders-patronymic">Отчество:</label>
+        <input class="text-edit" type="text" name="orders-patronymic" id="orders-patronymic" placeholder="Отчество, если желаете">
       </fieldset>
 
       <fieldset class="order-form__fieldset">
         <legend>Тел</legend>
-        <label for="orders-tel" class="tel tel-ico"></label>
+        <label for="orders-tel" class="tel tel--ico"></label>
         <input type="tel" name="orders-tel" id="orders-tel" placeholder="+7 ХХХ ХХ ХХ">
       </fieldset>
 
       <fieldset class="order-form__fieldset">
         <legend>E-mail</legend>
-        <label for="orders-email" class="email email-ico"></label>
+        <label for="orders-email" class="email email--ico"></label>
         <input type="email" name="orders-email" id="orders-email" placeholder="Ваш Email">
       </fieldset>
 
@@ -86,14 +84,14 @@
     </form>
   </main>
 
-  <footer>
+ <footer>
     <div class="social-links">
       <a class="social-links__link-image social-links__link-image--instagram" href="">Инстаграмм</a>
       <a class="social-links__link-image social-links__link-image--fb" href="">Фейсбук</a>
       <a class="social-links__link-image social-links__link-image--twitter" href="">Твиттер</a>
     </div>
     <div class="site-developer">
-      <a href="" class="site-developer__link">Разработано <img src="http://placehold.it/50x50" alt="" class="site-developer__logo"></a>
+      <a href="" class="site-developer__link">Разработано <div class="site-developer__logo">Лого</a>
     </div>
   </footer>
 
@@ -107,7 +105,7 @@
       <input class="basket-popup__size-button" type="radio" name="size" id="m" value="m">
       <label class="basket-popup__size-button" for="l">L</label>
       <input class="basket-popup__size-button" type="radio" name="size" id="l" value="l">
-      <input class="basket-popup__sumbit-button" type="submit" value="Добавить">
+      <input class="sumbit-button" type="submit" value="Добавить">
     </form>
   </article>
 </body>

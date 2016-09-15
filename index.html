@@ -7,34 +7,28 @@
 </head>
 
 <body>
-  <header>
-    <div class="top-menu">
-      <div class="top-menu__header-logo">Логотип</div>
-      <a class="top-menu__menu-button" href="">Меню</a>
-      <nav class="top-menu__menu-items">
-        <ul>
-          <li class="top-menu__menu-item"><a href="">Каталог товаров</a></li>
-          <li class="top-menu__menu-item"><a href="">Вязание на заказ</a></li>
-          <li class="top-menu__menu-item top-menu__menu-item--search"><a href="">Поиск по сайту</a></li>
-          <li class="top-menu__menu-item top-menu__menu-item--basket"><a href="">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="top-menu">
+    <a class="top-menu__header-logo" href="">Логотип</a>
+    <a class="top-menu__menu-button" href="">Меню</a>
+    <nav class="top-menu__menu-items">
+      <ul>
+        <li class="top-menu__menu-item"><a href="">Каталог товаров</a></li>
+        <li class="top-menu__menu-item"><a href="">Вязание на заказ</a></li>
+        <li class="top-menu__menu-item top-menu__menu-item--search"><a href="">Поиск по сайту</a></li>
+        <li class="top-menu__menu-item top-menu__menu-item--basket"><a href="">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-
     <div class="promo">
       <h1 class="promo__header">Милые штучки ручной работы для дома</h1>
-      <div class="promo__image"></div>
       <div class="promo__promo-cats">
         <div class="promo__promo-category promo__promo-category--interior">
           <h2 class="promo__category-header">Предметы интерьера</h2>
-          <div class="promo__category-ico promo__category-ico--interior"></div>
         </div>
         <div class="promo__promo-category promo__promo-category--toys">
           <h2 class="promo__category-header">Предметы интерьера</h2>
-          <div class="promo__category-ico promo__category-ico--toys"></div>
         </div>
       </div>
     </div>
@@ -65,28 +59,22 @@
     <section class="about-us">
       <h1 class="about-us__header">Коротко о нас</h1>
       <div class="about-us__advantages">
-        <div class="about-us__advantage">
-          <div class="about-us__advantage-image about-us__advantage-image--ecology"></div>
+        <div class="about-us__advantage about-us__advantage--ecology">
           <h3 class="about-us__advantage-description">Экологически чистые материалы</h3>
         </div>
-        <div class="about-us__advantage">
-          <div class="about-us__advantage-image about-us__advantage-image--small-price"></div>
+        <div class="about-us__advantage about-us__advantage--small-price">
           <h3 class="about-us__advantage-description">Скандинавский стиль по российской цене</h3>
         </div>
-        <div class="about-us__advantage">
-          <div class="about-us__advantage-image about-us__advantage-image--likes-on-foto"></div>
+        <div class="about-us__advantage about-us__advantage--likes-on-photo">
           <h3 class="about-us__advantage-description">Увеличивает лайки на фотографиях</h3>
         </div>
-        <div class="about-us__advantage">
-          <div class="about-us__advantage-image about-us__advantage-image--with-love"></div>
+        <div class="about-us__advantage about-us__advantage--with-love">
           <h3 class="about-us__advantage-description">Связано вручную с любовью и умилением</h3>
         </div>
-        <div class="about-us__advantage">
-          <div class="about-us__advantage-image about-us__advantage-image--russian-manufacturer"></div>
+        <div class="about-us__advantage about-us__advantage--russian-manufacturer">
           <h3 class="about-us__advantage-description">Поддержка отечественного производителя</h3>
         </div>
-        <div class="about-us__advantage">
-          <div class="about-us__advantage-image about-us__advantage-image--gift-wrap"></div>
+        <div class="about-us__advantage about-us__advantage--gift-wrap">
           <h3 class="about-us__advantage-description">Поставляется в подарочной упаковке</h3>
         </div>
       </div>
@@ -112,7 +100,7 @@
         <span class="contacts__field-name">E-mail:</span>
         <span class="contacts__field-value">info@mimimishkashop.ru</span>
       </div>
-      <div class="contacts__adress">
+      <div class="contacts__address">
         <span class="contacts__field-name">Адрес:</span>
         <span class="contacts__field-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
       </div>
@@ -128,7 +116,7 @@
       <a class="social-links__link-image social-links__link-image--twitter" href="">Твиттер</a>
     </div>
     <div class="site-developer">
-      <a href="" class="site-developer__link">Разработано <img src="http://placehold.it/50x50" alt="" class="site-developer__logo"></a>
+      <a href="" class="site-developer__link">Разработано <div class="site-developer__logo">Лого</a>
     </div>
   </footer>
 
@@ -142,7 +130,7 @@
       <input class="basket-popup__size-button" type="radio" name="size" id="m" value="m">
       <label class="basket-popup__size-button" for="l">L</label>
       <input class="basket-popup__size-button" type="radio" name="size" id="l" value="l">
-      <input class="basket-popup__sumbit-button" type="submit" value="Добавить">
+      <input class="sumbit-button" type="submit" value="Добавить">
     </form>
   </article>
 </body>
